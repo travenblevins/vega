@@ -7,7 +7,7 @@ body {
     flex-direction:row;
     justify-content:flex-start;
     align-items:center;
-    gap:200px;
+    gap:60vh;
 }
 
 .menu {
