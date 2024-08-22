@@ -5,5 +5,13 @@ body {
 .topbar {
     display:flex;
     flex-direction:row;
-    gap:20px;
+    justify-content:flex-start;
+    gap:200px;
+}
+
+.menu {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    color:gray;
 }
