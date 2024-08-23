@@ -2,13 +2,11 @@ body {
     color:black;
 }
 
-.topbar {
+ .topbar {
     display:flex;
     flex-direction:row;
-    justify-content:flex-start;
     align-items:center;
-    gap:60vh;
-}
+} 
 
 .menu {
     display:flex;
@@ -33,13 +31,17 @@ i {
     display:flex;
     flex-direction:row;
     align-items:center;
+    justify-content:flex-start;
     gap:10px;
 }
 
 .searchbar {
-    display:flex;
+    position:absolute;
+    display:flex; 
     flex-direction:row;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+    left:50%;
+    transform: translate(-50%);
     gap:10px;
 }
