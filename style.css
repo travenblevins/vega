@@ -64,3 +64,10 @@ i {
     justify-content:space-between;
     align-items:flex-start;
 }
+
+.top-center {
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    border:solid 5px gray;
+}
