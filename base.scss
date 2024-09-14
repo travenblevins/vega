@@ -1,11 +1,21 @@
 body {
     color: black;
+    margin:0;
+    padding:0;
   }
-  
+  .main {
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+  }
+
+
   .topbar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border:gray solid 1px;
+    margin: 0 0 0 5px;
   }
   
   .menu {
@@ -14,6 +24,9 @@ body {
     justify-content: center;
     gap: 10px;
     color: gray;
+    border:solid gray 1px;
+    flex-grow: 1;
+    margin: 0 0 0 5px;
   
     .menu2 {
       display: flex;
@@ -52,6 +65,7 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     background-color: gray;
+    
   
     img {
       height: 150px;
@@ -59,36 +73,43 @@ body {
     }
   }
   
+  
   .bottom {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-grow:1;
+    height:100%;
+  .center {
+    display:flex;
+    flex-direction:column;
+    flex-grow:5;
+    margin:20px;
   
-  
-    .top-center {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        border: solid 1px gray;
-    }
-    .middle-center {
-        background-color: lightgray;
-        .sports {
-            display:flex;
-            align-items: center;
-        }
-            .volleyball, .tennis, .soccer {
-                border:solid 1px gray;
-                flex-grow:1;
-                width: 100%; // Ensure items take full width (optional)
-                display: flex;
-                flex-direction: column; // Ensure contents are stacked within each sport item
-                justify-content: center; // Vertically center the contents within each item
-                align-items: center; // Center content horizontally within each item
-                border: solid 1px gray;
-                padding: 0 0 15px 0;
-            }
-            
+      .top-center {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          border: solid 1px gray;
+      }
+      .middle-center {
+          background-color: lightgray;
+          .sports {
+              display:flex;
+              align-items: center;
+          }
+              .volleyball, .tennis, .soccer {
+                  border:solid 1px gray;
+                  flex-grow:1;
+                  width: 100%; // Ensure items take full width (optional)
+                  display: flex;
+                  flex-direction: column; // Ensure contents are stacked within each sport item
+                  justify-content: center; // Vertically center the contents within each item
+                  align-items: center; // Center content horizontally within each item
+                  border: solid 1px gray;
+                  padding: 0 0 15px 0;
+              }
+              
                 .row1{
                     display:flex;
                     align-items: center;
@@ -105,9 +126,13 @@ body {
                 h5 {
                     margin:0;
                 }
-    }
+        }  }
 }
-  
+            .point {
+              display:flex;
+              justify-content: space-between;
+              background-color:lightgray;
+            }
   .title-bar {
     display: flex;
     justify-content: space-between;
