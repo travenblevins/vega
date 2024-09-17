@@ -1,3 +1,8 @@
+@use '_topbar.scss';
+@use '_leftbar.scss';
+@use '_rightbar.scss';
+@use '_center.scss';
+
 body {
   color: black;
   margin: 0;
@@ -10,152 +15,13 @@ body {
   height: 100vh;
 }
 
-.topbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: gray solid 1px;
-  margin: 0 0 0 5px;
-
-  .line {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-  }
-
-  .searchbar {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    left: 50%;
-    transform: translate(-50%);
-    gap: 10px;
-  }
-}
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  color: gray;
-  border: solid gray 1px;
-  flex-grow: 1;
-  margin: 0 0 0 5px;
-
-  .menu2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-  }
-}
 
 i {
   color: gray;
 }
 
-.badge {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-color: gray;
-  img {
-    height: 150px;
-    width: 150px;
-  }
-}
 
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-grow: 1;
-  height: 100%;
 
-  .center {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 5;
-    margin: 0 10px 10px 10px;
-
-    .top-center {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      border: solid 1px gray;
-    }
-
-    .middle-center {
-      background-color: lightgray;
-
-      .sports {
-        display: flex;
-        align-items: center;
-
-        .volleyball, .tennis, .soccer {
-          border: solid 1px gray;
-          flex-grow: 1;
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 0 0 15px 0;
-
-          .row1 {
-            display: flex;
-            align-items: center;
-            gap: 3px;
-
-            .green {
-              background-color: green;
-              color: white;
-            }
-          }
-
-          .row2 {
-            display: flex;
-            align-items: center;
-          }
-
-          h5 {
-            margin: 0;
-          }
-        }
-      }
-    }
-    .bottom-center {
-      background-color:lightgray;
-      border:solid gray 1px;
-      .point {
-        display: flex;
-        justify-content: space-between;
-        flex-grow:1;
-        background-color:white;
-        border:solid gray 1px;
-      }
-      .check {
-        display:flex;
-        justify-content:space-between;
-        .gray {
-          color:gray;
-        }
-      
-      }
-    }
-  }
-
-  .title-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   .material-symbols-outlined {
     font-variation-settings:
@@ -164,4 +30,3 @@ i {
       'GRAD' 0,
       'opsz' 7000;
   }
-}
